@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 const NAV_LINKS = [
   { href: "#projects", label: "Projects" },
+  { href: "#experience", label: "Experience" },
   { href: "#achievements", label: "Achievements" },
   { href: "#stack", label: "Stack" },
   { href: "#certifications", label: "Certifications" },
@@ -30,7 +31,7 @@ export default function Navbar() {
         <span className="font-mono text-blue-400 font-semibold tracking-tight">
           CarlosRolo
         </span>
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
           {NAV_LINKS.map(({ href, label }) => (
             <a
               key={href}
