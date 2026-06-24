@@ -7,8 +7,9 @@ export default function Contact() {
           Contact
         </h2>
         <p className="text-gray-500 max-w-xl mx-auto mb-12">
-          Open to full-time infrastructure and DevOps roles, remote work opportunities,
-          LATAM trainee programs, and graduate scholarships. Feel free to reach out.
+          If you are looking for an engineer with a strong foundation in networking,
+          cloud infrastructure, cybersecurity, IoT, automation, and operating systems — let&apos;s talk.
+          Open to full-time roles, remote work, LATAM trainee programs, and graduate scholarships.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">

@@ -31,9 +31,9 @@ export default function Hero() {
         }}
       />
       {/* Glow */}
-      <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-xl pointer-events-none" />
 
-      <div className="relative z-10 max-w-5xl">
+      <div className="relative z-10 max-w-6xl mx-auto">
 
         {/* Status badge */}
         <div className="inline-flex items-center gap-2 border border-blue-500/30 bg-blue-500/10 text-blue-400 text-sm px-4 py-1.5 rounded-full mb-8">
@@ -43,31 +43,31 @@ export default function Hero() {
 
         {/* Name + title */}
         <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-3">
-          Carlos Rodríguez
+          Carlos David Rodríguez López
         </h1>
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-            Infrastructure &amp; DevOps Engineer
+            Telematic Engineer
           </span>
         </h2>
 
         {/* Bio */}
-        <p className="text-gray-400 text-lg max-w-3xl mb-3 leading-relaxed">
-          Telematic Engineer graduated from{" "}
-          <span className="text-white font-medium">ESPOCH, Ecuador (2026)</span>,
-          registered with SENESCYT. Currently working as{" "}
-          <span className="text-white font-medium">Junior Infrastructure &amp; Automation Engineer at Andorasoft S.A.S.</span>,
-          managing production systems with Docker, Traefik, Nginx, GCP, and Linux.
-        </p>
-        <p className="text-gray-400 text-lg max-w-3xl mb-8 leading-relaxed">
-          Builder of a{" "}
-          <span className="text-white font-medium">24-project public portfolio</span>{" "}
-          spanning Cisco networking, cloud/DevOps, IoT edge computing, and full-stack development.
-          Former IEEE Student Branch Treasurer and Lab Technical Assistant at FIE-ESPOCH.
+        <p className="text-gray-400 text-lg max-w-5xl mb-8 leading-relaxed text-justify">
+          Telematic Engineer graduated with distinction from the{" "}
+          <span className="text-white font-medium">Escuela Superior Politécnica de Chimborazo (ESPOCH)</span>,
+          with a degree officially registered with SENESCYT and an active ORCID academic identifier.
+          Comprehensive profile combining hands-on experience in production infrastructure, networking,
+          cybersecurity, cloud computing, and IoT systems development with edge AI.
+          Over one year of verifiable professional experience at{" "}
+          <span className="text-white font-medium">Andorasoft S.A.S.</span>{" "}
+          as Jr. Infrastructure &amp; Automation Engineer, running Docker + Linux + VPN + n8n in real production.
+          Recognized with two first-place awards in national and university technical competitions endorsed by IEEE.
+          Treasurer of IEEE Student Branch ESPOCH 2025. Cloud-agnostic mindset focused on secure,
+          scalable, and well-automated systems.
         </p>
 
         {/* Achievement badges */}
-        <div className="flex flex-wrap gap-3 mb-8">
+        <div className="grid grid-cols-2 gap-3 mb-10">
           {[
             { icon: "🥇", text: "1st Place — Reto Nacional IoT V3.0 (PneumoLink)" },
             { icon: "🥇", text: "1st Place — ESPOCH Academic Fair (Smart Traffic Lights)" },
@@ -100,7 +100,7 @@ export default function Hero() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 max-w-2xl">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
           {stats.map((stat) => (
             <div key={stat.label} className="bg-gray-900/50 border border-gray-800/50 rounded-xl p-4 text-center">
               <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
